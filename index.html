@@ -1,0 +1,526 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta name="google-site-verification" 
+		  content="fD5gahNF0zLrE5sWK_ui7tJnNCARuboEw5YFHans1PE" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>ICCAD HALO Workshop 2020</title>
+	<style type="text/css"> 
+		body {
+			margin: 2px;
+			padding: 0;
+			background-color: white;
+			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+		}
+		span.hl1 {
+		color:#ae00ff;
+		}
+		td.frameborder {
+			border-bottom: 1px solid #ae00ff;
+			border-left: 10px solid white;
+			border-right: 10px solid white;
+			
+		}
+		h1, h2 {
+			text-align: center;
+			margin: 5px;
+			padding: 5px;
+			background-color: white;
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+		}
+		h3, h4 {
+			text-align: left;
+			margin: 2px;
+			padding: 5px;
+			background-color: white;
+		}
+		a {
+			text-decoration: none;
+		}
+		p.copyright1 {
+			text-align: center;
+			font-size: small;
+		}
+		p.secondaryTitle {
+			text-align: center;
+			margin: 1px;
+			padding: 2px;
+			background-color: white;
+		}
+		p.content1 {
+			text-align: left;
+			margin: 0px;
+			padding-top: 5px;
+			background-color: white;
+		}
+		p.content2 {
+			text-align: left;
+			margin: 0px;
+			padding-top: 5px;
+			background-color: white;
+			font-weight: bold;
+		}
+		p.content3 {
+			text-align: left;
+			margin-left: 5ex;
+			margin-right: 0em;
+			margin-top: 0em;
+			margin-bottom: 0em;
+			padding-top: 2px;
+			background-color: white;
+		}
+		p.content4 {
+			text-align: left;
+			margin-left: 4em;
+			margin-right: 0em;
+			margin-top: 0em;
+			margin-bottom: 0em;
+			padding-top: 2px;
+			background-color: white;
+		}
+		
+		
+		/*model*/
+		.btn_bn {
+			border: none;
+			text-align: left;
+			margin-left: 2em;
+			margin-right: 0em;
+			margin-top: 0em;
+			margin-bottom: 0em;
+			padding-top: 2px;
+			font-size: 14px;
+			cursor: pointer;
+			display: inline-block;
+			color: dodgerblue;
+		}
+	</style>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+</head> 
+<body> 
+	<table>
+		<!-- title -->
+		<tr class="frameborder">
+			<td class="frameborder">
+				<h2>Workshop on <span class="hl1">H</span>ardware and <span class="hl1">A</span>lgorithms for <span class="hl1">L</span>earning <span class="hl1">O</span>n-a-chip<br> (<span class="hl1">HALO</span>) 2020</h2>
+				<p class="secondaryTitle">Thursday, November 5, 2020</p>
+				<p class="secondaryTitle">Virtual Workshop Event</h4>
+				<p class="secondaryTitle">Past HALO workshops : <a href="http://nimo.asu.edu/halo/2015/">2015</a>/<a href="http://nimo.asu.edu/halo/2016/">2016</a>/<a href="http://nimo.asu.edu/halo/2017/">2017</a>/<a href="http://nimo.asu.edu/halo/">2018</a>/<a href="https://bonanyan.github.io/halo2019/">2019</a></p>
+				<p class="secondaryTitle"><a href="assets/CFP_HALO_2019.pdf">Call for Posters</a>, submission deadline: TBD, 2020 EDT. Student travel support available.
+				<!-- <p class="secondaryTitle">Poster Submission is closed. Student travel grant available. Welcome your participation! -->
+			</td>
+		</tr>
+		<!-- General Information and key topics -->
+		<tr>
+			<td class="frameborder">
+				<h3>General Information</h3>
+				<p>In recent years, machine/deep learning algorithms has unprecedentedly improved the accuracies in practical recognition and classification tasks, some even surpassing human-level accuracy. While significant progresses have been made on accelerating the models for real-time inference on edge and mobile devices, the training of the models largely remains offline on server side. State-of-the-art learning algorithms for deep neural networks (DNN) imposes significant challenges for hardware implementations in terms of computation, memory, and communication. This is especially true for edge devices and portable hardware applications, such as smartphones, machine translation devices, and smart wearable devices, where severe constraints exist in performance, power, and area.
+				</p>
+				<p>There is a timely need to map the latest complex learning algorithms to custom hardware, in order to achieve orders of magnitude improvement in performance, energy efficiency and compactness. Exemplary efforts from industry and academia include many application-specific hardware designs (e.g., xPU, FPGA, ASIC, etc.). Recent progress in computational neurosciences and nanoelectronic technology, such as emerging memory devices, will further help shed light on future hardware-software platforms for learning on-a-chip. At the same time new learning algorithms need to be developed to fully explore the potential of the hardware architecture.
+				</p>
+				<p>The overarching goal of this workshop is to explore the potential of on-chip machine learning, to reveal emerging algorithms and design needs, and to promote novel applications for learning. It aims to establish a forum to discuss the current practices, as well as future research needs in the aforementioned fields.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="frameborder">
+				<h3>Key Topics</h3>
+					<ul style="list-style-type:disc;">
+						<li>Synaptic plasticity and neuron motifs of learning dynamics</li>
+						<li>Computation models of cortical activities</li>
+						<li>Sparse learning, feature extraction and personalization</li>
+						<li>Deep learning with high speed and high power efficiency</li>
+						<li>Hardware acceleration for machine learning</li>
+						<li>Hardware emulation of brain</li>
+						<li>Nanoelectronic devices and architectures for neuro-computing</li>
+						<li>Applications of learning on a smart mobile platform</li>
+					</ul> 
+			</td>
+		</tr>
+		<!-- Speakers -->
+		<tr>
+			<td class="frameborder">
+				<h3>Speakers</h3>
+				<h4>Keynote</h4>
+				<ul style="list-style-type:none;">
+					<li>TBD</li>
+<!-- 					<li>Allen Rush, AMD</li>
+				 	<li>Hsien-Hsin Lee, Facebook</li>
+				 	<li>Vikas Chandra, Facebook</li> -->
+				</ul>
+				<h4>Invited Speakers</h4>
+				<ul style="list-style-type:none;">
+					<li>TBD</li>
+<!-- 				 	<li>Yu Wang, Tsinghua University</li>
+					<li>Jae-Joon Kim, Pohang University of Science and Technology (POSTECH)</li>
+					<li>Yingyan Lin, Rice University</li>
+					<li>Tinoosh Mohsenin, University of Maryland, Baltimore County</li>
+					<li>Jaewoong Sim, Intel</li>
+					<li>Siddharth Garg, New York University</li>
+					<li>Zheng Zhang, University of California, Santa Barbara</li>
+					<li>Pierre-Emmanuel Gaillardon, University of Utah</li>
+					<li>Catherine Schuman, Oak Ridge National Laboratory</li> -->
+				</ul>
+			</td>
+		</tr>
+	
+		<!-- Final Program -->
+		<tr>
+			<td class="frameborder">
+				<h3>Final Program</h3>
+				<p class="content1">8:15am &#8212 8:30am</p>
+				<p class="content2">Introduction and opening remarks</p>
+				<p class="content1">8:30am &#8212 9:20am</p>
+				<p class="content2">&#8212&#8212&#8212 Keynote talk &#8212&#8212&#8212</p>
+<!--				<p class="content3">TBD</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#keynote1">TBD
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="keynote1" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Keynote</h4>
+						</div>
+						<div class="modal-body">
+						  <p>Abstract: TBD</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<p class="content3">Amir Salek (Google)</p>
+				
+				
+				<p class="content2">&#8212&#8212&#8212 Session 1: Algorithm and Hardware Acceleration of Machine Learning &#8212&#8212&#8212 </p>
+				<p class="content1">9:15am &#8212 9:40am</p>
+<!--				<p class="content3">Neural Networks Accelerator Design from the User Perspective</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk1">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk1" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD 
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Aravind Dasu (Intel)</p>
+				<p class="content1">9:40am &#8212 10:05am</p>
+<!--				<p class="content3">Algorithm/Hardware Co-design for Energy/Area efficient In-Memory Neural Network Computing</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk2">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk2" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD 
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Deming Chen (UIUC) </p>
+				<p class="content1">10:05am &#8212 10:30am</p>
+<!--				<p class="content3">Bringing Powerful Machine-learning Systems to Daily-life Devices via Algorithm-hardware Co-design</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk3">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk3" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							   TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Yiran Chen (Duke) </p>
+				<p class="content2">Coffee Break</p>
+
+
+	
+				
+				<p class="content2">&#8212&#8212&#8212 Session 2: Intelligent Mobile Applications: learning and inference &#8212&#8212&#8212 </p>
+				<p class="content1">10:45pm &#8212 11:10pm</p>
+<!--				<p class="content3">A Product Engine for Energy-Efficient Execution of Binary Neural Networks Using Resistive Memories</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk6">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk6" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">TBD</p>
+				<p class="content1">11:10pm &#8212 11:35pm</p>
+<!--				<p class="content3">Evolutionary Optimization for Neuromorphic Systems</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk7">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk7" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Radu Marculescu (UT Austin) </p>
+				<p class="content1">11:35pm &#8212 12:00pm</p>
+<!--				<p class="content3">Micro AI: When Intelligence Moves to the Low Power Sensors</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk8">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk8" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Yanzhi Wang (Northeastern)</p>
+				
+				<p class="content1">12:00pm &#8212 1:30pm</p>
+				<p class="content2">Lunch</p>
+
+
+				<p class="content2">&#8212&#8212&#8212 Session 3: Model and Architecture for Neuromorphic Computing and Analog Computing &#8212&#8212&#8212 </p>
+				<p class="content1">1:30pm &#8212 1:55pm</p>
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk6">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk6" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Mike Davis (Intel) </p>
+				<p class="content1">1:55pm &#8212 2:20pm</p>
+<!--				<p class="content3">Evolutionary Optimization for Neuromorphic Systems</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk7">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk7" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Luping Shi (Tsinghua University)</p>
+				<p class="content1">2:20pm &#8212 2:45pm</p>
+<!--				<p class="content3">Micro AI: When Intelligence Moves to the Low Power Sensors</p>-->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk8">TBD</button>
+				<!-- Modal -->
+				<div class="modal fade" id="invited_talk8" role="dialog">
+					<div class="modal-dialog">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">Invited Talk</h4>
+						</div>
+						<div class="modal-body">
+						 	<p>Abstract:<br>
+							  TBD
+							</p>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<p class="content3">Daniel Bankman(Carnegie Mellon University)</p>
+				
+				
+				<p class="content2">&#8212&#8212&#8212 Poster Session (2mins each) &#8212&#8212&#8212 </p>
+				<p class="content1">2:45pm &#8212 3:50pm</p>
+
+				<p class="content3">P1. TBD</p>
+				<p class="content4">TBD</p>
+	<!-- 			<p class="content3">P2. Achieving Super-Linear Speedup across Multi-FPGA for Real-Time DNN Inference</p>
+				<p class="content4">Weiwen Jiang (University of Notre Dame)</p>
+				<p class="content3">P3. On Neural Architecture Search for Resource-Constrained Hardware Platforms</p>
+				<p class="content4">Qing Lu (University of Notre Dame)</p>
+				<p class="content3">P4. CIMAT: A Transpose SRAM-based Compute-In-Memory Architecture for Deep Neural Network On-Chip Training</p>
+				<p class="content4">Hongwu Jiang (Georgia Institute of Technology)</p>
+				<p class="content3">P5.	HR3AM: A Heat Resilient design for RRAM based neuromorphic computing</p>
+				<p class="content4">Xiao Liu (University of California San Diego) </p>
+				<p class="content3">P6. ACG-Engine: An Inference Accelerator for Content Generative Neural Networks</p>
+				<p class="content4">Haobo Xu (Institute of Computing Technology, Chinese Academy of Sciences)</p>
+				<p class="content3">P7. Mixed Precision Neural Architecture Search for Energy Efficient Deep Learning</p>
+				<p class="content4">Zhixuan Jiang (The University of Texas at Austin)</p>
+				<p class="content3">P8.	Enhanced Error-Correcting DNN Classifier Towards Robust Machine Learning On-a-chip</p>
+				<p class="content4">Tao Liu (Lehigh University)</p>
+				<p class="content3">P9.	PCONV: A Desirable Sparsity Dimension for Real-time Execution -- From Algorithm to Framework</p>
+				<p class="content4">Xiaolong Ma (Northeastern University)</p>
+				<p class="content3">P10. 2.5ms MobileNet-V2 Execution on Mobile Phone -- A Compiler-Assisted Block Pruning Framework </p>
+				<p class="content4">Zhengang Li (Northeastern University)</p>
+				<p class="content3">P11. INA: Incremental Network Approximation Algorithm for Limited Precision Deep Neural Networks</p>
+				<p class="content4">Zheyu Liu (Tsinghua University)</p>
+				<p class="content3">P12. Approximating Backpropagation for a Biologically Plausible Local Learning Rule in Spiking Neural Networks</p>
+				<p class="content4">Haowen Fang (Syracuse University) </p>
+				<p class="content3">P13. Leveraging Model Diversity for High QoS Deep Learning Inference in the Clouds</p>
+				<p class="content4">Jeff (Jun) Zhang (New York University)</p> -->
+				
+				<p class="content1">3:50pm &#8212 4:30pm</p>
+				<p class="content2">Poster Discussion</p>
+				
+			</td>
+		</tr>
+		<!-- Committee -->
+		<tr>
+			<td class="frameborder">
+				<h3>Organizing Committee</h3>
+				
+				<h4>Co-chairs</h4>
+				<ul style="list-style-type:none;">
+				 	<li>Qinru Qiu (Syracuse University)</li>
+				 	<li>Yingyan Lin (Rice University)</li>
+					<li>Chenchen Liu (University of Maryland, Baltimore County)</li>
+				</ul>
+				<h4>Steering Committee</h4>
+				<ul style="list-style-type:none;">
+				 	<li>Yu Cao, Arizona State University</li>
+					<li>Xin Li, Duke University</li>
+					<li>Jae-sun Seo, Arizona State University</li>
+				</ul> 
+				<h4>Technical Program Committee</h4>
+				<ul style="list-style-type:none;">
+				 	<li>Rob Aitken, ARM</li>
+				 	<li>Shawn Blanton, Carnegie Mellon University</li>
+				 	<li>Sankar Basu, National Science Foundation</li>
+					<li>Yiran Chen, Duke University</li>
+<!--					<li>Yu Cao, Arizona State University</li>-->
+					<li>Yiorgos Makris, University of Texas, Dallas</li>
+					<li>Kendel McCarley, Raytheon</li>
+					<li>Mustafa Ozdal, Bilkent University, Turkey</li>
+					<li>Yanzhi Wang, Northeastern University</li>
+					<li>Yuan Xie, University of California, Santa Barbara</li>
+					<li>Yingyan Lin, Rice University</li>
+<!--					<li>To Be Determined</li>-->
+<!-- 				</ul> 
+				<h4>Web Chair</h4>
+				<ul style="list-style-type:none;">
+				 	<li>Zhuwei Qin, San Francisco State University</li>
+				</ul>  -->
+			</td>
+		</tr>
+		<!-- Sponsors -->
+		<tr>
+			<td class="frameborder">
+				<h3>Sponsored by</h3>
+				<h3>TBD</h3>
+				<!-- <img src="assets/logo-sigda.jpg" alt="Sigda" height="100px"> -->
+			</td>
+		</tr>
+		<!-- copyright -->
+		<tr>
+			<td><p class="copyright1"> Last updated on Aug. 22, 2020. Contents subject to change. &copy; All rights reserved.</p></td>
+		</tr>
+		
+	</table>
+	
+</body>
+</html>
