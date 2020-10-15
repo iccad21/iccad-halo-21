@@ -157,12 +157,14 @@
 				</ul>
 				<h4>Invited Speakers</h4>
 				<ul style="list-style-type:none;">
- 					<li>Deming Chen, University of Illinois Urbana-Champaign</li>
-					<li>Yiran Chen, Duke University</li>
-					<li>Aravind Dasu, Intel </li>
-					<li>Radu Marculescu, University of Texas at Austin</li>
+					<li>Nathan McDonald, Air Force Research Lab</li>
+					<li>Priya Panda, Yale University</li>
+					<li>Travis Dewolf, Applied Brain Research</li>
+					<li>Hai (Helen) Li, Duke University</li>
+					<li>Deming Chen, University of Illinois Urbana-Champaign</li>
+					<li>Yiyu Shi, University of Notre Dame</li>
 					<li>Yanzhi Wang, Northeastern University</li>
-					<li>Daniel Bankman, Carnegie Mellon University</li>
+					<li>Eriko Nurvitadhi, Intel </li>
 				</ul>
 			</td>
 		</tr>
@@ -204,8 +206,8 @@
 				<p class="content2">Section Chair: TBD</p>
 
 				<p class="content1">9:15am &#8212 9:40am</p>
-<!--				<p class="content3">Neural Networks Accelerator Design from the User Perspective</p>-->
-				<!-- <button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk1">Title (TBD)</button> -->
+				<!-- <p class="content3">Neural Networks Accelerator Design from the User Perspective</p> -->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk1">Hyperdimensional Computing for Expeditionary Robotics</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk1" role="dialog">
 					<div class="modal-dialog">
@@ -217,7 +219,7 @@
 						</div>
 						<div class="modal-body">
 						 	<p>Abstract:<br>
-							  TBD 
+							  Machine learning (ML) research has been understandably dominated by real-valued artificial neural networks (ANN).  However, these algorithms are not efficiently mapped to traditional computing hardware.  To push ML to resource limited Internet of Things (IoT) devices, much research has focused on spiking neural networks (SNN) running on specialized hardware.  But ML for IoT need not exclusively consider the neural network framework. Hyperdimensional computing with very large binary vectors can be both efficiently mapped to traditional hardware and, through simple mathematical operations, affords online learning in the field.  This talk will examine various applications to expeditionary robotic tasks including transfer learning in the field, non-trivially cloning one trained robot into a swarm, navigation despite extraneous sensors, and updating behavior of trained swarms in the field.
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -229,7 +231,7 @@
 				<p class="content3">Nathan McDonald (Air Force Research Lab)</p>
 				<p class="content1">9:40am &#8212 10:05am</p>
 <!--				<p class="content3">Algorithm/Hardware Co-design for Energy/Area efficient In-Memory Neural Network Computing</p>-->
-				<!-- <button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk2">Title (TBD)</button> -->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk2">Towards Energy-Efficient, Robust and Accurate Neural Computing with Algorithm-Hardware Co-Design</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk2" role="dialog">
 					<div class="modal-dialog">
@@ -241,7 +243,7 @@
 						</div>
 						<div class="modal-body">
 						 	<p>Abstract:<br>
-							  TBD 
+							  Spiking Neural Networks (SNNs) offer an energy-efficient alternative for implementing deep learning applications. In recent years, there have been several proposals focused on supervised (conversion, spike-based gradient descent) training methods to improve the accuracy of SNNs on large-scale tasks. However, each of these methods suffer from scalability, latency, and accuracy limitations. I will talk about certain algorithmic techniques of modifying the SNN configuration with backward residual connections, and hybrid artificial-and-spiking neuronal activations to improve the learning ability of the training methodologies to yield competitive accuracy, while, yielding large efficiency gains over their artificial counterparts. Further, I will discuss our recent work on using a temporal Batch Normalization Through Time (BNTT) technique. Most prior SNN works till now have disregarded batch normalization deeming it ineffective for training temporal SNNs. BNTT allows us to train deep SNN architectures from scratch, for the first time, on complex datasets with just few 25-30 time-steps. Finally, I will delve into the usefulness of analog memristive crossbars that perform Matrix-Vector-Multiplications (MVMs) efficiently with low energy and area requirements for adversarially robust neural networks. Crossbars generally suffer from intrinsic non-idealities that cause errors in performing MVMs, leading to degradation in the accuracy of neural networks. l will discuss how the intrinsic hardware variations manifested through crossbar non-idealities yield adversarial robustness to the mapped models without any additional optimization. 
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -250,10 +252,10 @@
 					  </div>
 					</div>
 				</div>
-				<p class="content3">Hai (Helen) Li (Duke University) </p>
+				<p class="content3">Priya Panda (Yale University) </p>
 				<p class="content1">10:05am &#8212 10:30am</p>
 <!--				<p class="content3">Bringing Powerful Machine-learning Systems to Daily-life Devices via Algorithm-hardware Co-design</p>-->
-				<!-- <button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk3">Title (TBD)</button> -->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk3">Adaptive neurorobotics using Nengo and the Loihi</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk3" role="dialog">
 					<div class="modal-dialog">
@@ -265,7 +267,7 @@
 						</div>
 						<div class="modal-body">
 						 	<p>Abstract:<br>
-							   TBD
+							   In this talk I will discuss some of the neurorobotics research we've done at Applied Brain Research using our neural development platform Nengo and Intel's neuromorphic Loihi chip. I will present two systems: 1) A simulated rover controller that combines a deep neural network converted to a spiking neural network to locate a target with a control network developed using the Neural Engineering Framework to drive the robot to the target. In this example I will show how non-experts can quickly develop end-to-end spiking neural networks using deep learning techniques and mechanistic neural circuits. 2) A non-linear adaptive force-based control system that we use to control a real-world Kinova Jaco2 6-DOF arm in a reaching task. In this example I will highlight how we are able to take advantage of the Loihi's on-chip learning to achieve better performance with lower latency and power costs than the same implementation on standard hardware.
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -278,7 +280,7 @@
 
 
 				<p class="content1">10:30am &#8212 10:55am</p>
-				<!-- <button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk4">Title (TBD)</button> -->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk4">Efficient Deep Learning at Scale</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk4" role="dialog">
 					<div class="modal-dialog">
@@ -290,7 +292,7 @@
 						</div>
 						<div class="modal-body">
 						 	<p>Abstract:<br>
-							   TBD
+							   Following technology advances in high-performance computation systems and fast growth of data acquisition, machine learning, especially deep neural networks (DNNs), made remarkable success in many research areas and application domains. Such a success, to a great extent, is enabled by developing large-scale network models that learn from a huge volume of data. Though the research on hardware acceleration for neural networks has been extensively studied, the progress of hardware development still falls far behind the upscaling of DNN models at the software level. Thus, the efficient deployment of DNN models emerges as a major challenge. For example, the massive number of parameters and high computation demand make it difficult to deploy state-of-the-art DNNs onto resource-constrained devices. Compared to inference, training a DNN is much more complicated and has more significant computation and communication intensity. We envision that software/hardware co-design for efficient deep learning is necessary. In this talk, I will start with the trends of machine learning study, followed by our latest explorations on DNN model compression, architecture search, distributed learning, and corresponding optimization at the hardware level.
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -299,7 +301,7 @@
 					  </div>
 					</div>
 				</div>
-				<p class="content3" style="color:blue;"> TBD </p>
+				<p class="content3" > Hai (Helen) Li (Duke University) </p>
 
 				<!-- Aravind Dasu (Intel) -->
 				<p class="content1">10:55am &#8212 11:10am</p>
@@ -313,7 +315,7 @@
 				<p class="content2">Section Chair: TBD</p>
 				<p class="content1">11:10pm &#8212 11:35pm</p>
 <!--				<p class="content3">A Product Engine for Energy-Efficient Execution of Binary Neural Networks Using Resistive Memories</p>-->
-				<!-- <button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk6">Title (TBD)</button> -->
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk6">VecQ: Minimal Loss DNN Model Compression with Vectorized Weight Quantization</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk6" role="dialog">
 					<div class="modal-dialog">
@@ -325,7 +327,7 @@
 						</div>
 						<div class="modal-body">
 						 	<p>Abstract:<br>
-							TBD
+							Quantization has been proven to be an effective method for reducing the computing and/or storage cost of DNNs. However, the trade-off between the quantization bitwidth and final accuracy is complex and non-convex, which makes it difficult to be optimized directly. Minimizing direct quantization loss (DQL) of the coefficient data is an effective local optimization method, but previous works often neglect the accurate control of the DQL, resulting in a higher loss of the final DNN model accuracy. In this talk, we propose a novel metric called Vector Loss. Based on this new metric, we develop a new quantization solution called VecQ, which achieves minimal direct quantization loss and better model accuracy. In addition, in order to speed up the proposed quantization process during model training, we accelerate the quantization process with a parameterized probability estimation method and template-based derivation calculation. We evaluate our proposed algorithm on MNIST, CIFAR, ImageNet, IMDB movie review and THUCNews text data sets with numerical DNN models. The results demonstrate that our proposed quantization solution is more accurate and effective than the state-of-the-art approaches yet with more flexible bitwidth support. ×weight size reduction.
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -411,7 +413,7 @@
 					  </div>
 					</div>
 				</div>
-				<p class="content3" style="color:blue;"> TBD</p>
+				<p class="content3"> Eriko Nurvitadhi (Intel)</p>
 
 				<!-- Daniel Bankman (Carnegie Mellon University) -->
 				
@@ -503,7 +505,7 @@
 		</tr>
 		<!-- copyright -->
 		<tr>
-			<td><p class="copyright1"> Last updated on Sept. 23, 2020. Contents subject to change. &copy; All rights reserved.</p></td>
+			<td><p class="copyright1"> Last updated on Oct. 15, 2020. Contents subject to change. &copy; All rights reserved.</p></td>
 		</tr>
 		
 	</table>
