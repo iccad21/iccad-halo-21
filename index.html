@@ -426,7 +426,8 @@
 				<p class="content1">12:00pm &#8212 12:25pm</p>
 <!--				<p class="content3">Micro AI: When Intelligence Moves to the Low Power Sensors</p>-->
 
-				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk8">Title (TBD)</button>
+				<button type="button" class="btn_bn" data-toggle="modal" data-target="#invited_talk8">Towards Best Possible Deep Learning Acceleration on the Edge - A Compression-Compilation Co-Design Framework
+</button>
 				<!-- Modal -->
 				<div class="modal fade" id="invited_talk8" role="dialog">
 					<div class="modal-dialog">
@@ -447,7 +448,9 @@
 							</div>
 
 						 	<p><b>Abstract:</b><br>
-							TBD
+							Mobile and embedded computing devices have become key carriers of deep learning to facilitate the widespread of machine intelligence. However, there is a widely recognized challenge to achieve real-time DNN inference on edge devices, due to the limited computation/storage resources on such devices. Model compression of DNNs, including weight pruning and weight quantization, has been investigated to overcome this challenge. However, current work on DNN compression suffer from the limitation that accuracy and hardware performance are somewhat conflicting goals difficult to satisfy simultaneously.
+ 
+							In this talk, we present our recent work CoCoPIE, representing Compression-Compilation Codesign, to overcome this limitation towards the best possible DNN acceleration on edge devices. We propose novel fine-grained structured pruning schemes, including pattern-based pruning, block-based pruning, etc. They can simultaneously achieve high hardware performance (similar to filter/channel pruning) while maintaining zero accuracy loss, with the help of compiler, which is beyond the capability of prior work. Similarly, we present novel quantization scheme that achieves ultra-high hardware performance close to 2-bit weight quantization, with almost no accuracy loss. Through the CoCoPIE framework, we are able to achieve real-time on-device execution of a number of DNN tasks, including object detection, pose estimation, activity detection, speech recognition, just using an off-the-shelf mobile device, with up to 180X speedup compared with prior work.
 							</p>
 						</div>
 
